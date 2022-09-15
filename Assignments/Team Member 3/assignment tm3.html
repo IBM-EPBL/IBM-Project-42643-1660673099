@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Resume</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #33334d;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #a3a3c2;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Vignesh S</h2>
+  <p> <i>Graphic designer and web developer</i></p>
+ <img src="file:///C:/Users/Administrator/Music/istockphoto-1034357476-612x612.jpg" style="width:200px;height:150px ;padding-bottom: 100px; float: left;" alt="Soory picture is unavailable"><br><br>
+
+<button type="button" onclick="alert('Download cv is unresponsive')">Download CV</button>
+ <button type="button" onclick="alert('Hiring is unavailable')">Hire me</button>
+ </header>
+<section>
+
+  <nav>
+    <form>
+    <ul>
+      <li>
+        <label for="html">Html:</label><br>
+        <input type="range" id="html" name="html" value="90" >
+      </li>
+      <li>
+      <label for="css">CSS:</label><br>
+      <input type="range" id="css" name="css" value="70">
+      </li>
+      <li>
+      <label for="javascript">JavaScript:</label><br>
+      <input type="range" id="javascript" name="javascript" value="50">
+    </li>
+    </ul>
+    </form>
+  </nav>
+  
+  <article>
+    <h1>About me</h1>
+    <p>I am a hardworking and ambitious individual with a great passion for the transport and logistics industry. I am currently in my second year of studying BA Logistics and Supply Chain Management at Aston University. I have excellent communication skills, enabling me to effectively communicate with a wide range of people. I am seeing a part-time position in the industry in which I can put into practice my knowledge and experience, ultimately benefiting the operations of the organisation that I work for.</p>
+    <address style="text-align: justify; padding: 20px; background-color: rgba(107, 107, 105, 0.938);">
+        Age : 28 <br>
+        Email: messivignesh0@gmail.com<br>
+        Phone :9843875046<br>
+        Address: 140,citycenter,New york,USA<br>
+    </address>
+</article>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>
