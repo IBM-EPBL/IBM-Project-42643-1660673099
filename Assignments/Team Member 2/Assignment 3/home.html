@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+<!--.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: blueviolet} -->
+</style>
+</head>
+<body style="background-color: #51e2f5">
+<!--<button class="button button1"><a href="signin.html" style="column-span:2 ">Login</a></button>
+<button class="button button2"><a href="signup.html">Register</a></button>
+<button class="button button3"><a href="about.html">About</a> </button> -->
+<h1 > Welcome to our chatbot</h1>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "41973ae4-7b71-4271-8c25-b2aa6135ccb7", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "460a9ce0-51f9-43bb-bd98-a4571c6903e8", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
